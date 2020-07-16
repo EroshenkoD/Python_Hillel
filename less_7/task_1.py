@@ -1,24 +1,27 @@
-
-enter_str = 'qqqwweerrrt'
-
-
-def count_symbols(input_str):
-    """
-    Дописать функцию, которая считает сколько раз каждая из букв
-    встречается в строке, разложить буквы в словарь парами
-    {буква:количество упоминаний в строке}
-    """
-    output_dict = dict()
-
-    for i in input_str:
-        if i in output_dict.keys():
-            output_dict[i] += 1
-        else:
-            output_dict[i] = 1
-
-    print(output_dict)
-    output_dict = None
-    return output_dict
+"""
+1. Напишите функцию, которая возвращает список файлов из директории.
+2. Напишите декоратор для этой функции, который распечатает все файлы с
+раcширением .log из найденных
+"""
+import os
 
 
-count_symbols(enter_str)
+def decorator(func):
+    def wrapper(*args):
+        direct = args[0]
+        rez = func(*args)
+        for i in rez:
+            if '.log' in i:
+                with open(f'{direct}\{i}') as file:
+                    print(file.read())
+
+        return rez
+    return wrapper
+
+
+@decorator
+def list_file_direct(direct):
+    return os.listdir(path=direct)
+
+
+list_file_direct('C:\ProgramData')

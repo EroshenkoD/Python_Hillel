@@ -1,0 +1,22 @@
+2020-08-05 13:49:57,670 - LOGGER - INFO - запустили метод _get_room, class Game 
+2020-08-05 13:49:57,670 - LOGGER - INFO - вышли из метода _get_room, class Game 
+2020-08-05 13:49:57,670 - LOGGER - INFO - запустили метод run, class Game 
+2020-08-05 13:50:05,871 - LOGGER - INFO - запустили метод _parse, class Game 
+2020-08-05 13:50:05,871 - LOGGER - ERROR - НЕ сработала проверка if in_str.startswith("go ") 
+2020-08-05 13:50:05,871 - LOGGER - INFO - вышли из метода _parse, class Game 
+2020-08-05 13:50:15,285 - LOGGER - INFO - запустили метод _parse, class Game 
+2020-08-05 13:50:15,285 - LOGGER - INFO - сработала проверка if in_str.startswith("go ") 
+2020-08-05 13:50:15,295 - LOGGER - ERROR - НЕ сработала проверка if self.current_room._check_exit(direction) 
+2020-08-05 13:50:15,295 - LOGGER - INFO - вышли из метода _parse, class Game 
+2020-08-05 13:50:25,503 - LOGGER - INFO - запустили метод _parse, class Game 
+2020-08-05 13:50:25,503 - LOGGER - INFO - сработала проверка if in_str.startswith("go ") 
+2020-08-05 13:50:25,503 - LOGGER - INFO - запустили метод _get_room, class Game 
+2020-08-05 13:50:25,503 - LOGGER - INFO - вышли из метода _get_room, class Game 
+2020-08-05 13:50:25,503 - LOGGER - INFO - сработала проверка if self.current_room._check_exit(direction) 
+2020-08-05 13:50:25,503 - LOGGER - INFO - вышли из метода _parse, class Game 
+2020-08-05 16:14:06,057 - LOGGER - INFO - запустили метод _get_room, class Game 
+2020-08-05 16:14:06,065 - LOGGER - INFO - вышли из метода _get_room, class Game 
+2020-08-05 16:14:06,065 - LOGGER - INFO - запустили метод run, class Game 
+2020-08-05 16:14:11,502 - LOGGER - INFO - запустили метод _parse, class Game 
+2020-08-05 16:14:11,502 - LOGGER - ERROR - НЕ сработала проверка if in_str.startswith("go ") 
+2020-08-05 16:14:11,502 - LOGGER - INFO - вышли из метода _parse, class Game 
